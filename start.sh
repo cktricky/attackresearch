@@ -1,0 +1,1 @@
+rvmsudo bundle exec unicorn $*

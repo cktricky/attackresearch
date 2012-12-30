@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AttackResearch</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+		<div class="navbar-search pull-right">
+			<ul class="nav">
+				<% if not current_user %>
+					<li> <%= link_to "Login", login_path, {:style => "color: #FFFFFF"}%> </li>
+					<li> <%= link_to "Signup", signup_path, {:style => "color: #FFFFFF"}%> </li>
+				<% else %>
+					<li> <%= link_to "Logout", logout_path, {:style => "color: #FFFFFF"}%> </li>
+				<% end %>
+			</ul>			
+		</div>
+
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="#">AttackResearch</a>
+
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse collapse">
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+      </div>
+
+    </div>
+  </div>
+</div>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
