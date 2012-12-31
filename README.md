@@ -2,7 +2,7 @@ This Rails application follows the Blog Post Series on carnal0wnage.attackresear
 
 To get this going, have RVM installed.
 
-    git clone git@github.com:cktricky/attackresearch.git
+    git clone git://github.com/cktricky/attackresearch.git
     cd attackresearch
     bundle install # <~ after accepting the .rvmrc file, of course
     rake db:create
