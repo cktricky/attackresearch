@@ -1,2 +1,22 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div align="center">
+	<h1>Sign Up</h1>
+	
+		<div style="margin-top: 25px">
+			<%= form_for @user do |f| %>
+			
+			  <p>
+			    <%= f.label :email %><br />
+			    <%= f.text_field :email %>
+			  </p>
+			  <p>
+			    <%= f.label :password %><br />
+			    <%= f.password_field :password %>
+			  </p>
+			  <p>
+			    <%= f.label :password_confirmation %><br />
+			    <%= f.password_field :password_confirmation %>
+			  </p>
+			   <p><%= submit_tag "Submit", :class => "btn btn-inverse" %></p>
+			<% end %>
+		</div>
+</div>

@@ -1,7 +1,7 @@
 <div class="container-fluid" align="center">
 	
-<h1>Log in</h1>
-
+<h1>Login</h1>
+<div style="margin-top: 25px">
 <%= form_tag sessions_path do %>
   <p>
     <%= label_tag :email %><br />
@@ -11,6 +11,7 @@
     <%= label_tag :password %><br />
     <%= password_field_tag :password %>
   </p>
-  <p><%= submit_tag "Log in", {:class => "btn btn-inverse"} %></p>
+  <p><%= submit_tag "Login", {:class => "btn btn-inverse"} %></p>
 <% end %>
+</div>
 </div>
